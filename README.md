@@ -7,7 +7,7 @@ Front End Website as part of Le Wagon Web Development Sprint
 - [Technologies Used](#technologies-used)
 - [Directory Structure](#directory-structure)
 
-## 
+## Overview
 This Landing page is an assignment that fulfils part of the Le Wagon Web Development Sprint delivered on April 9th, 2024.
 [Landing Page](https://abisoyeonanuga.github.io/landingpg/)
 
