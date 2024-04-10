@@ -2,42 +2,74 @@
 
 body {
     font-family: Chivo;
+    margin: 0;
 }
 p{
     font-family: Overpass;
+    font-size: 20px;
 }
 a {
     text-decoration: none;
     color: white;
     background-color: #1A48E3;
 }
-
+.text-center {
+    text-align: center;
+}
+.btn-blue {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.btn-blue:hover {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color:#1742ce;
+    transition: ease-in-out 0.2s;
+}
+.img-circle {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
 h1 {
-    font-size: large;
+    font-size: 40px;
     text-align: center;
 }
 h2 {
-    font-size: large;
+    font-size: 30px;
+    text-align: center;
 }
 h3 {
-    font-size: medium;
+    font-size: 20px;
 }
-div.city{
+div.city {
     margin: 30px;
-    padding: 10px;
+    padding: 20px;
     border: none;
     border-radius: 8px;
-    box-shadow: 10px 20px 30px rgba(0, 46, 162, 0.067);
+    border-style: solid;
+    border-color: #f7f7f7;
+    border-width: 1px;
+    box-shadow: -5px -5px 30px rgba(0, 46, 162, 0.067);
+    width: fit-content;
 }
-
+div.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
 .banner {
     text-align: center;
-    background-image: url(static/images/background.jpg);
+    background-image: url(../static/images/background.jpg);
     background-size: cover;
-    height: 300px;
-    padding: 100px 0px
+    padding: 100px 0px;
+    color: white;
 }
-
 .footer {
     background-size: cover;
+    background-color: #646464;
+    padding: 50px 0;
+}
+.footer p {
+    vertical-align: center;
 }
