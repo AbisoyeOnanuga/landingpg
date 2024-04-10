@@ -15,6 +15,20 @@ a {
 div {
     display: block;
 }
+.banner {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../static/images/background.jpg);
+    background-size: cover;
+    padding: 100px 0px;
+    color: white;
+}
+.banner p{
+    opacity: 0.7;
+    margin: 25px 0;
+}
+.banner h1{
+    margin: 0;
+}
 .text-center {
     text-align: center;
 }
@@ -34,10 +48,13 @@ div {
     height: 200px;
     object-fit: cover;
 }
-h1 {
+h1 h2 h3 {
     font-family: Chivo;
-    font-size: 50px;
     text-align: center;
+    color: #404042;
+}
+h1{
+    font-size: 50px;
 }
 h2 {
     font-size: 30px;
@@ -46,14 +63,14 @@ h3 {
     font-size: 20px;
 }
 div.city {
-    padding: 20px;
+    padding: 20px 50px;
     border: none;
     border-radius: 8px;
-    border-style: solid;
-    border-color: #f7f7f7;
-    border-width: 1px;
     box-shadow: -5px -5px 30px rgba(0, 46, 162, 0.067);
-    width: fit-content;
+    text-align: center;
+}
+div.city p{
+    font-size: 20px;
 }
 div.cards {
     display: grid;
@@ -62,21 +79,7 @@ div.cards {
 }
 div.list-inline {
     display: flex;
-    gap: 30px;
-}
-.banner {
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../static/images/background.jpg);
-    background-size: cover;
-    padding: 100px 0px;
-    color: white;
-}
-.banner p{
-    opacity: 0.7;
-    margin: 25px 0;
-}
-.banner h1{
-    margin: 0;
+    gap: 50px;
 }
 .footer {
     background-size: cover;
@@ -87,4 +90,22 @@ div.list-inline {
     vertical-align: center;
     color: white;
     opacity: 0.7;
+}
+@media screen and (min-width:1000px) {
+    .banner{
+        padding: 100px 0;
+    }
+    div.list-inline {
+        display: flex;
+        gap: 30px;
+    }
+}
+@media screen and (max-width:900px) {
+    .banner{
+        padding: 100px 20px;
+    }
+    div.list-inline {
+        display: grid;
+        gap: 30px;
+    }
 }
