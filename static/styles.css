@@ -1,4 +1,6 @@
 /* put your styles here*/
+/*==== GOOGLE FONTS ====*/
+@import url("https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&amp;display=swap");
 
 body {
     font-family: Overpass;
@@ -51,35 +53,37 @@ div {
 h1 h2 h3 {
     font-family: Chivo;
     text-align: center;
-    color: #404042;
 }
 h1{
     font-size: 50px;
 }
 h2 {
     font-size: 30px;
+    color: #404042;
 }
 h3 {
     font-size: 20px;
+    color: #404042;
 }
-div.city {
+.card-white {
     padding: 20px 50px;
     border: none;
     border-radius: 8px;
     box-shadow: -5px -5px 30px rgba(0, 46, 162, 0.067);
     text-align: center;
 }
-div.city p{
+.card-white p{
     font-size: 20px;
 }
-div.cards {
+.container {
     display: grid;
     margin: 30px;
     justify-content: center;
 }
-div.list-inline {
-    display: flex;
-    gap: 50px;
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 .footer {
     background-size: cover;
@@ -91,21 +95,15 @@ div.list-inline {
     color: white;
     opacity: 0.7;
 }
-@media screen and (min-width:1000px) {
-    .banner{
-        padding: 100px 0;
-    }
-    div.list-inline {
-        display: flex;
-        gap: 30px;
-    }
-}
-@media screen and (max-width:900px) {
+
+/* ===== MEDIA QUERIES ===== */
+@media screen and (max-width:1000px) {
     .banner{
         padding: 100px 20px;
     }
-    div.list-inline {
+    div.cards {
         display: grid;
+        grid-template-columns: 1fr;
         gap: 30px;
     }
 }
