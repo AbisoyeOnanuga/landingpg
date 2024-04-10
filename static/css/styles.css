@@ -19,7 +19,7 @@ div {
 }
 .banner {
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../static/images/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../images/background.jpg);
     background-size: cover;
     padding: 100px 0px;
     color: white;
